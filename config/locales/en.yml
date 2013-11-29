@@ -3,3 +3,7 @@
 
 en:
   hello: "Hello world"
+  insert_email: "Cadastre seu e-mail"
+  join: "Cadastrar"
+  success: "Obrigado, em breve lhe enviaremos um e-mail."
+  error: 'Este e-mail não é válido. Por favor, informe um e-mail válido.'

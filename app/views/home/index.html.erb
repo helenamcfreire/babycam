@@ -10,6 +10,7 @@
 <!-- Le styles -->
 <link href="/assets/bootstrap.css" rel="stylesheet">
 <link href="/assets/bootstrap-responsive.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
 
   <style>
 
@@ -31,6 +32,7 @@
           background-size: cover;
           height: 960px;
           margin-bottom: 100px;
+          font-family: 'Amaranth';
       }
 
       .top .container {
@@ -42,6 +44,18 @@
       .top .container h1 {
           margin-top: 178px;
 
+      }
+
+      .top .container .lead {
+          font-size: 23px;
+      }
+
+      .input-append input {
+          padding: 10px;
+      }
+
+      .input-append input[type=text] {
+          width: 345px;
       }
 
 
@@ -156,7 +170,24 @@
   <div class="container">
     <h1>Baby Cam</h1>
     <p class="lead">Trabalhe e acompanhe o crescimento do seu<br/>filho em um único lugar. Sucesso lá fora, chega<br/>no Brasil!</p>
-    <a class="btn btn-large btn-primary" href="#">Cadastre-se</a>
+
+    <%= form_for(@cadastrado, :url => {:controller => 'home', :action => 'create'}, :html => { :class => 'form-register'}) do |e| %>
+        <div class="input-append">
+          <%= e.text_field :email, :maxlength => 50, :placeholder => t(:insert_email), :class => 'span2' %>
+          <%= e.submit :class => 'btn btn-success', :value => t(:join) %>
+        </div>
+        <% if flash[:error] -%>
+            <p style="color: #da4f49">
+              <%=h flash[:error] %>
+            </p>
+        <% end -%>
+        <% if flash[:success] -%>
+            <p style="color: #5cb85c">
+              <%=h flash[:success] %>
+            </p>
+        <% end -%>
+    <% end %>
+
   </div>
 </div>
 
