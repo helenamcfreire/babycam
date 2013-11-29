@@ -10,182 +10,137 @@
 <!-- Le styles -->
 <link href="/assets/bootstrap.css" rel="stylesheet">
 <link href="/assets/bootstrap-responsive.css" rel="stylesheet">
-<style>
 
-        /* GLOBAL STYLES
-        -------------------------------------------------- */
-        /* Padding below the footer and lighter body text */
+  <style>
 
-    body {
-        padding-bottom: 40px;
-        color: #5a5a5a;
-    }
+          /* GLOBAL STYLES
+          -------------------------------------------------- */
+          /* Padding below the footer and lighter body text */
 
+      body {
+          padding-bottom: 40px;
+          color: #5a5a5a;
+      }
 
-        /* CUSTOMIZE THE CAROUSEL
-        -------------------------------------------------- */
+      .top{
+          position: relative;
+          background: url('/assets/bg4.jpg') no-repeat center center;
+          -webkit-background-size: cover;
+          -o-background-size: cover;
+          -moz-background-size: cover;
+          background-size: cover;
+          height: 960px;
+          margin-bottom: 100px;
+      }
 
-        /* Carousel base class */
-    .carousel {
-        margin-bottom: 60px;
-    }
+      .top .container {
+          width: 1248px;
+          color: #fff;
+          text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      }
 
-    .carousel .container {
-        position: relative;
-        z-index: 9;
-        width: 1500px;
-    }
+      .top .container h1 {
+          margin-top: 178px;
 
-
-    .carousel .item {
-        height: 970px;
-    }
-    .carousel img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        height: 970px;
-    }
-
-    .carousel-caption {
-        background-color: transparent;
-        position: static;
-        max-width: 460px;
-        padding: 0 20px;
-        margin-top: 200px;
-    }
-    .carousel-caption h1,
-    .carousel-caption .lead {
-        margin: 0;
-        line-height: 1.25;
-        color: #fff;
-        text-shadow: 0 1px 1px rgba(0,0,0,.4);
-    }
-    .carousel-caption .btn {
-        margin-top: 10px;
-    }
+      }
 
 
+          /* MARKETING CONTENT
+          -------------------------------------------------- */
 
-        /* MARKETING CONTENT
-        -------------------------------------------------- */
-
-        /* Center align the text within the three columns below the carousel */
-    .marketing .span4 {
-        text-align: center;
-    }
-    .marketing h2 {
-        font-weight: normal;
-    }
-    .marketing .span4 p {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+          /* Center align the text within the three columns below the carousel */
+      .marketing .span4 {
+          text-align: center;
+      }
+      .marketing h2 {
+          font-weight: normal;
+      }
+      .marketing .span4 p {
+          margin-left: 10px;
+          margin-right: 10px;
+      }
 
 
-        /* Featurettes
-        ------------------------- */
+          /* Featurettes
+          ------------------------- */
 
-    .featurette-divider {
-        margin: 80px 0; /* Space out the Bootstrap <hr> more */
-    }
-    .featurette {
-        padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-        overflow: hidden; /* Vertically center images part 2: clear their floats. */
-    }
-    .featurette-image {
-        margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-    }
+      .featurette-divider {
+          margin: 80px 0; /* Space out the Bootstrap <hr> more */
+      }
+      .featurette {
+          padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+          overflow: hidden; /* Vertically center images part 2: clear their floats. */
+      }
+      .featurette-image {
+          margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+      }
 
-        /* Give some space on the sides of the floated elements so text doesn't run right into it. */
-    .featurette-image.pull-left {
-        margin-right: 40px;
-    }
-    .featurette-image.pull-right {
-        margin-left: 40px;
-    }
+          /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+      .featurette-image.pull-left {
+          margin-right: 40px;
+      }
+      .featurette-image.pull-right {
+          margin-left: 40px;
+      }
 
-        /* Thin out the marketing headings */
-    .featurette-heading {
-        font-size: 50px;
-        font-weight: 300;
-        line-height: 1;
-        letter-spacing: -1px;
-    }
+          /* Thin out the marketing headings */
+      .featurette-heading {
+          font-size: 50px;
+          font-weight: 300;
+          line-height: 1;
+          letter-spacing: -1px;
+      }
 
 
 
-        /* RESPONSIVE CSS
-        -------------------------------------------------- */
+          /* RESPONSIVE CSS
+          -------------------------------------------------- */
 
-    @media (max-width: 979px) {
+      @media (max-width: 979px) {
 
-        .carousel .item {
-            height: 550px;
-        }
-        .carousel img {
-            width: auto;
-            height: 550px;
-        }
+          .container.navbar-wrapper {
+              margin-bottom: 0;
+              width: auto;
+          }
+          .navbar-inner {
+              border-radius: 0;
+              margin: -20px 0;
+          }
 
-        .featurette {
-            height: auto;
-            padding: 0;
-        }
-        .featurette-image.pull-left,
-        .featurette-image.pull-right {
-            display: block;
-            float: none;
-            max-width: 40%;
-            margin: 0 auto 20px;
-        }
-    }
-
-
-    @media (max-width: 767px) {
+          .featurette {
+              height: auto;
+              padding: 0;
+          }
+          .featurette-image.pull-left,
+          .featurette-image.pull-right {
+              display: block;
+              float: none;
+              max-width: 40%;
+              margin: 0 auto 20px;
+          }
+      }
 
 
-        .carousel {
-            margin-left: -20px;
-            margin-right: -20px;
-        }
-        .carousel .container {
+      @media (max-width: 767px) {
 
-        }
-        .carousel .item {
-            height: 300px;
-        }
-        .carousel img {
-            height: 300px;
-        }
-        .carousel-caption {
-            width: 65%;
-            padding: 0 70px;
-            margin-top: 100px;
-        }
-        .carousel-caption h1 {
-            font-size: 30px;
-        }
-        .carousel-caption .lead,
-        .carousel-caption .btn {
-            font-size: 18px;
-        }
+          .navbar-inner {
+              margin: -20px;
+          }
 
-        .marketing .span4 + .span4 {
-            margin-top: 40px;
-        }
+          .marketing .span4 + .span4 {
+              margin-top: 40px;
+          }
 
-        .featurette-heading {
-            font-size: 30px;
-        }
-        .featurette .lead {
-            font-size: 18px;
-            line-height: 1.5;
-        }
+          .featurette-heading {
+              font-size: 30px;
+          }
+          .featurette .lead {
+              font-size: 18px;
+              line-height: 1.5;
+          }
 
-    }
-</style>
+      }
+  </style>
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -196,22 +151,14 @@
 
 <body>
 
-<!-- Carousel
-================================================== -->
-<div id="myCarousel" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="/assets/baby7.jpg" alt="">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Baby Cam</h1>
-          <p class="lead">Trabalhe e acompanhe o crescimento do seu filho em um único lugar. Sucesso lá fora, chega no Brasil!</p>
-          <a class="btn btn-large btn-primary" href="#">Cadastre-se</a>
-        </div>
-      </div>
-    </div>
+<div class="top">
+
+  <div class="container">
+    <h1>Baby Cam</h1>
+    <p class="lead">Trabalhe e acompanhe o crescimento do seu<br/>filho em um único lugar. Sucesso lá fora, chega<br/>no Brasil!</p>
+    <a class="btn btn-large btn-primary" href="#">Cadastre-se</a>
   </div>
-</div><!-- /.carousel -->
+</div>
 
 
 
@@ -224,7 +171,7 @@
   <!-- Three columns of text below the carousel -->
   <div class="row">
     <div class="span4">
-      <img class="img-circle" src="/assets/cam3.png">
+      <img class="img-circle" src="/assets/cam9.jpg">
       <h2>Alugue</h2>
       <p>Alugue cada câmera por R$ 69,90. Não se preocupe, nossa equipe instala tudo para você.</p>
     </div><!-- /.span4 -->
@@ -246,7 +193,7 @@
   <hr class="featurette-divider">
 
   <div class="featurette">
-    <img class="featurette-image pull-right" src="/assets/cam4.jpg">
+    <img class="featurette-image pull-right" src="/assets/cam22.jpg">
     <h2 class="featurette-heading">Alugue uma câmera.</h2>
     <p class="lead">Cadastre-se no nosso site, alugue uma ou mais câmeras sem sair de casa. Pague no cartão de crédito, e em pouco tempo nossa equipe irá instalar tudo na sua casa!</p>
   </div>
